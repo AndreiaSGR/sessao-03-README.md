@@ -19,5 +19,5 @@ a superfície de ataque ao mínimo necessário. A única exceção aberta é a p
 Todo o tráfego de saída (outgoing) permanece permitido, para que o servidor consiga continuar a funcionar normalmente (atualizações, DNS, etc.).
 Adicionalmente, foi bloqueado especificamente o IP fictício 203.0.113.50 na chain INPUT do iptables, simulando a resposta a um IP identificado 
 como malicioso. 
-#### Conclusões
+##### Conclusões
 Esta política reduz drasticamente a superfície de ataque, mas é essencial garantir que a porta SSH está sempre acessível antes de ativar o firewall, para evitar perder acesso remoto ao servidor.
